@@ -4,8 +4,8 @@ import './App.css';
 
 //Global Pages
 
-import Home from '/pages/Home';
-import Projects from '/pages/Projects';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 class App extends Component {
   render() {
