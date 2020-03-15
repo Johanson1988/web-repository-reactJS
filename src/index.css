@@ -287,7 +287,12 @@ header {
 
 .hamburger {
     display: block;
-    position: relative;
+    position: fixed;
+    right: 10px;
+}
+
+.hamburger:focus {
+    outline: none;
 }
 
 .hamburger,
@@ -458,6 +463,7 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    margin: 0 18px;
 }
 
 .portfolio__item {
