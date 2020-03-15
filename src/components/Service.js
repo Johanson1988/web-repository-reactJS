@@ -1,16 +1,13 @@
 import React, {Component} from 'react';
 
 export default class Service extends Component {
-    state = {
-        title : this.props.service.title,
-        paragraph : this.props.service.paragraph
-    }
     render() {
+        const {title,paragraph} = this.props.service;
         return(
         <div className="service">
-            <h3>{this.state.title}</h3>
+            <h3>{title}</h3>
             <p>
-                {this.state.paragraph}
+                {paragraph}
             </p>
         </div>
         )

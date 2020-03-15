@@ -3,13 +3,14 @@ import {Link} from 'react-router-dom';
 
 import Header from './../components/Header';
 import Footer from './../components/Footer';
+import Intro from './../components/Intro';
 
 export default class Projects extends Component {
     render() {
         return(
             <div>
                 <Header />
-                <h2>portfolio</h2>
+                <Intro details="" />
                 <Link to="/">Home</Link>
                 <Footer />
             </div>
