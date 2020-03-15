@@ -5,8 +5,8 @@ export default class Work extends Component {
     render() {
         const {link, imgSrc} = this.props.work;
         return(
-        <Link to={this.state.link} className="portfolio__item">
-            <img src={this.state.imgSrc} alt="" className="portfolio__img" />
+        <Link to={link} className="portfolio__item">
+            <img src={imgSrc} alt="" className="portfolio__img" />
         </Link>
         )
     }
