@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 
+//import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+
 export default class navbarItem extends Component {
     state = {
         link: this.props.navbarItem.link,
@@ -11,7 +14,7 @@ export default class navbarItem extends Component {
         
         return(
             <li className="navv__item" onClick={closeMenu}>
-                <a href={this.state.link} className="nav__link">{this.state.content}</a>
+                <Link to={"/"+ this.state.link} className="nav__link">{this.state.content}</Link>
             </li>
         )
     }
