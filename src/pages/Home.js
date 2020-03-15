@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-//import {Link} from 'react-router-dom';
 
+import Header from './../components/Header';
 import Intro from './../components/Intro';
 import Services from './../components/Services';
 import About from './../components/About';
@@ -11,6 +11,7 @@ export default class Home extends Component {
     render() {
         return(
             <div>
+                <Header />
                 <Intro />
                 <Services />
                 <About />

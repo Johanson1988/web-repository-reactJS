@@ -15,7 +15,7 @@ export default class Footer extends Component {
     render() {
         return(
             <footer>        
-                <ul class="social-list">
+                <ul className="social-list">
                     {
                         socialMediaArray.map(socialNetwork => <SocialNetwork key={shortid.generate()} socialNetwork={socialNetwork} />)
                     }
