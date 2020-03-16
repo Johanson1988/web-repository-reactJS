@@ -15,27 +15,25 @@ export default class Projects extends Component {
         const introObj = {
             title: handle,
             subtitle: handle,
-            imgSrc: handle.replace("project", "portfolio"),
+            imgSrc: `./../images/${handle.replace("project", "portfolio")}.jpg`,
             imgAlt: handle
         }
         const projectObj = {
             firstParagrah: handle,
             secondParagrah: handle,
             thirdParagrah: handle,
-            imgSrc: handle.replace("project", "portfolio"),
+            imgSrc: `./../images/${handle.replace("project", "portfolio")}.jpg`,
             imgAlt: handle
         }
         this.setState( _ => ({introObj,projectObj}));
     }
 
     render() {
-        //                <Intro details={this.state.introObj} />
-        //                <Projects details={this.state.projectObj} />
         return(
+                //<Projects details={this.state.projectObj} />
             <div>
                 <Header />
-                <h1>{this.state.introObj.title}</h1>
-                <h1>{this.state.projectObj.firstParagrah}</h1>
+                <Intro details={this.state.introObj} />          
                 <Footer />
             </div>
         )
