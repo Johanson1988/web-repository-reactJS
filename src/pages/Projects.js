@@ -6,19 +6,8 @@ import Intro from './../components/Intro';
 
 export default class Projects extends Component {
     state = {
-        introObj : {
-            title: '',
-            subtitle: '',
-            imgSrc: ''.replace("project", "portfolio"),
-            imgAlt: ''
-        },
-        projectObj : {
-            firstParagrah: '',
-            SecondParagrah: '',
-            thirdParagrah: '',
-            imgSrc: ''.replace("project", "portfolio"),
-            imgAlt: ''
-        }
+        introObj : {title:null},
+        projectObj : {firstParagrah:null}
     }
     
     componentDidMount () {
@@ -40,11 +29,13 @@ export default class Projects extends Component {
     }
 
     render() {
+        //                <Intro details={this.state.introObj} />
+        //                <Projects details={this.state.projectObj} />
         return(
             <div>
                 <Header />
-                <Intro details={this.state.introObj} />
-                <Projects details={this.state.projectObj} />
+                <h1>{this.state.introObj.title}</h1>
+                <h1>{this.state.projectObj.firstParagrah}</h1>
                 <Footer />
             </div>
         )
