@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Header from './../components/Header';
 import Footer from './../components/Footer';
 import Intro from './../components/Intro';
+import Project from './../components/Project'
 
 export default class Projects extends Component {
     state = {
@@ -30,10 +31,13 @@ export default class Projects extends Component {
 
     render() {
         return(
-                //<Projects details={this.state.projectObj} />
             <div>
                 <Header />
-                <Intro details={this.state.introObj} />          
+                <Intro details={this.state.introObj} />
+                <Project details={this.state.projectObj} />
+                <h1>{this.state.projectObj.firstParagrah}</h1>
+                <h1>{this.state.projectObj.secondParagrah}</h1>
+                <h1>{this.state.projectObj.thirdParagrah}</h1>                
                 <Footer />
             </div>
         )
