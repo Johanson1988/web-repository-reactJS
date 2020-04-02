@@ -469,6 +469,8 @@ header {
 .portfolio__item {
     background: var(--clr-neutral3);
     overflow: hidden;
+    text-align: center;
+    position: relative;
 
 }
 
@@ -483,10 +485,41 @@ header {
 }
 
 .portfolio__img:hover,
+.portfolio__title:hover .portfolio__img,
+.portfolio__logo:hover .portfolio__img,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .5;
 }
+
+.portfolio__item:hover .portfolio__title,
+.portfolio__item:hover .portfolio__logo  {
+    display:block;
+    transform: scale(5);
+    opacity: .5;
+    color: green;
+    font-size: 0.6em;
+    
+}
+
+.portfolio__title {
+    transition:all 1s;
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    font-size: 0px;
+}
+
+.portfolio__logo {
+    transition:all 1s;
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-size: 0px;
+}
+
 
 /* footer */
 
