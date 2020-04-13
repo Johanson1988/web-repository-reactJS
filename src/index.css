@@ -185,6 +185,7 @@ h3 {font-size: var(--fs-h3)}
 
 .section__title {
     margin-bottom: 0.25em;
+    text-transform: capitalize;
 }
 
 .section__title--intro {
@@ -556,4 +557,43 @@ footer a:hover,
 
 .social-list__link {
     padding: .5em;
+}
+
+/* project */
+
+.project__title {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+.project__description {
+    padding: 1em 4em;
+    text-align: justify;
+}
+
+.project__img {
+    border-radius: 5%;
+    margin: 0.5em auto;
+}
+
+.project__link {
+    font-size: 2em;
+    padding: 1em;
+}
+
+.project-features__list {
+    list-style:square;
+    display:flex;
+    justify-content: center;
+    margin: 2em;    
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.project-features__item {
+    margin: 0 1em;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    
+
 }

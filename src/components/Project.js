@@ -6,45 +6,45 @@ export default class Project extends Component {
         const {projectDescription, implementedFeatures, upcomingFeatures, imgSrc, imgAlt, trelloLink, githubLink, slidesLink, deployLink} = this.props.details;
         return(
             <div className="portfolio-item-individual">
-                <h2>Project Description</h2>
-                <p>{projectDescription}</p>
-                <img src={imgSrc} alt={imgAlt} />
-                <h2>Implemented features</h2>
-                <ul>
+                <h2 className="project__title">Project Description</h2>
+                <p className="project__description">{projectDescription}</p>
+                <img className="project__img" src={imgSrc} alt={imgAlt} />
+                <h2 className="project__title">Implemented features</h2>
+                <ul className="project-features__list">
                     {
-                        implementedFeatures.map(feature => <li key={shortid.generate()}>{feature}</li>)
+                        implementedFeatures.map(feature => <li className="project-features__item" key={shortid.generate()}>{feature}</li>)
                     }
                 </ul>
-                <h2>Upcoming features</h2>
-                <ul>
+                <h2 className="project__title">Upcoming features</h2>
+                <ul className="project-features__list">
                     {
-                        upcomingFeatures.map(feature => <li key={shortid.generate()}>{feature}</li>)
+                        upcomingFeatures.map(feature => <li className="project-features__item" key={shortid.generate()}>{feature}</li>)
                     }
                 </ul>
-                <h2>Links</h2>
-                <ul>
+                <h2 className="project__title">Links</h2>
+                <ul className="social-list">
                     {
                         trelloLink ? 
-                        <li>
+                        <li className="social-list__item project__link">
                         <a href={trelloLink} target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-trello" />
+                            <i className="fab fa-trello" />
                         </a>
                     </li>
                     : null
                     }
-                    <li>
+                    <li className="social-list__item project__link">
                         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github" />
+                            <i className="fab fa-github" />
                         </a>
                     </li>
-                    <li>
+                    <li className="social-list__item project__link">
                         <a href={slidesLink} target="_blank" rel="noopener noreferrer">
-                            <i class="iconify" data-icon="bx:bx-slideshow" data-inline="false" />
+                            <i className="iconify" data-icon="bx:bx-slideshow" data-inline="false" />
                         </a>
                     </li>
-                    <li>
+                    <li className="social-list__item project__link">
                         <a href={deployLink} target="_blank" rel="noopener noreferrer">
-                            <i class="iconify" data-icon="logos:deploy" data-inline="false" />
+                            <i className="iconify" data-icon="logos:deploy" data-inline="false" />
                         </a>
                     </li>
                 </ul>
