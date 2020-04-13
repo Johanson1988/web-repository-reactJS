@@ -8,6 +8,7 @@ export default class Work extends Component {
         <Link to={"projects/" + projectName} className="portfolio__item">
             <h3 className="portfolio__title">{projectName}</h3>
             <div className="portfolio__logo">
+                
                 <i className="fab fa-node-js"></i>
                 <i className="fab fa-js-square"></i>
                 <i className="iconify" data-icon="cib:mongodb" data-inline="false"></i>
