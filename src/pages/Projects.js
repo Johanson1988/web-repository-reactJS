@@ -4,8 +4,9 @@ import Header from './../components/Header';
 import Footer from './../components/Footer';
 import Intro from './../components/Intro';
 import Project from './../components/Project';
+import { connect } from 'react-redux';
 
-export default class Projects extends Component {
+class Projects extends Component {
     state = {
         introObj : { title: null },
         projectObj :  {firstParagrah: null }
@@ -31,16 +32,22 @@ export default class Projects extends Component {
     }
 
     render() {
+        console.log('Projects:', this.props);
         return(
             <div>
                 <Header />
                 <Intro details={this.state.introObj} />
-                <Project details={this.state.projectObj} />
-                <h1>{this.state.projectObj.firstParagrah}</h1>
-                <h1>{this.state.projectObj.secondParagrah}</h1>
-                <h1>{this.state.projectObj.thirdParagrah}</h1>                
+                <Project details={this.state.projectObj} />            
                 <Footer />
             </div>
         )
     }
 }
+
+const mapStateToProps = (state, ownProps) => {
+    const handle = ownProps.match.params.handle;
+    return {
+        work: state.works.find(work => work.projectName === handle)
+    }
+}
+export default connect(mapStateToProps)(Projects);
