@@ -14,8 +14,7 @@ class Intro extends Component {
             <section className="intro" id="home">
                 <h1 className="section__title section__title--intro">
                     <strong>{title}</strong>
-                </h1>
-               
+                </h1>               
                     {
                         Array.isArray(subtitle) ?
                         <div>
