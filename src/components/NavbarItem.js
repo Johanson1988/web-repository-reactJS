@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 //import {Link} from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as NavLink } from 'react-router-hash-link';
 
 export default class navbarItem extends Component {
     render() {
@@ -10,7 +10,7 @@ export default class navbarItem extends Component {
         
         return(
             <li className="navv__item" onClick={closeMenu}>
-                <Link to={"/"+ link} className="nav__link">{content}</Link>
+                <NavLink to={"/"+ link} className="nav__link">{content}</NavLink>
             </li>
         )
     }

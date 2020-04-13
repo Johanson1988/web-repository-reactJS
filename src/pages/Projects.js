@@ -3,15 +3,16 @@ import React, {Component} from 'react';
 import Header from './../components/Header';
 import Footer from './../components/Footer';
 import Intro from './../components/Intro';
-import Project from './../components/Project'
+import Project from './../components/Project';
 
 export default class Projects extends Component {
     state = {
-        introObj : {title:null},
-        projectObj : {firstParagrah:null}
+        introObj : { title: null },
+        projectObj :  {firstParagrah: null }
     }
     
     componentDidMount () {
+        console.log(this.props);
         const {handle} = this.props.match.params;
         const introObj = {
             title: handle,
