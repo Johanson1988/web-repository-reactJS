@@ -2,21 +2,31 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { withRouter } from 'react-router-dom';
+import SocialNetwork from './../components/SocialNetwork';
+import shortid from 'shortid';
 
 class Intro extends Component {
     render() {
         const {title,subtitle, imgSrc, imgAlt} = this.props.introDetails;
         console.log('Intro:',this.props.technologies);
+        const technologies = this.props.technologies;
         return(
             <section className="intro" id="home">
                 <h1 className="section__title section__title--intro">
                     <strong>{title}</strong>
                 </h1>
-                <p className="section__subtitle section__subtitle--intro">
+               
                     {
-                        Array.isArray(subtitle) ? 'Array' : subtitle
+                        Array.isArray(subtitle) ?
+                        <div>
+                            <p className="section__subtitle section__subtitle--intro">Technologies involved:</p>
+                            <ul className="tech-list__intro">
+                                {technologies.map(techIcon => <SocialNetwork key={shortid.generate()} socialNetwork={techIcon} />)}
+                            </ul>
+                        </div>
+                        :  <p className="section__subtitle section__subtitle--intro">{subtitle}</p>
                     }
-                </p>
+                
                 <img src={imgSrc} alt={imgAlt} className="intro__img" />
             </section>
         )

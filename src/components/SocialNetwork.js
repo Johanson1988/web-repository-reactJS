@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 export default class SocialNetwork extends Component {
     render() {
         const {link, iconClass, title, iconData} = this.props.socialNetwork;
+        console.log('Social:', this.props.socialNetwork);
         return(
             <li className="social-list__item">
                 {

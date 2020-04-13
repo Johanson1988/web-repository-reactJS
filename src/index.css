@@ -332,6 +332,15 @@ header {
     display: inline-block;
 }
 
+.tech-list__intro {
+    margin: -.5em;
+    list-style: none;
+    display: flex;
+    justify-content: flex-center;
+    font-size: 2.5em;
+    max-height: 5px;
+}
+
 @media (min-width: 600px) {
     .intro {
         display: grid;
