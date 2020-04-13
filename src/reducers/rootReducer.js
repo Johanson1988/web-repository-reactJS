@@ -10,19 +10,37 @@ const initState = {
         slidesLink:'https://docs.google.com/presentation/d/18911Of3tFYTkDpowqfjsfx49ftPjA5s2Uun3vg8jmAc/edit#slide=id.g6aeb787dc0_1_69',
         deployLink:'https://johanson1988.github.io/project-iron-ball/',
         projectDescription:'This project is a clone of the Arkanoid game. Arkanoid (アルカノイド Arukanoido) is an arcade game released by Taito in 1986. The player controls the "Vaus", a space vessel that acts as the game\'s "paddle" which prevents a ball from falling from the playing field, attempting to bounce it against a number of bricks. The ball striking a brick causes the brick to disappear. When all the bricks are gone, the player goes to the next level, where another pattern of bricks appears',
-        technologies: ['canvas', 'es6', 'git'],
+        technologies: ['Canvas', 'JavaScript ES6'],
         implementedFeatures: ['sounds', 'keyboard control', 'infinite levels', 'pause', 'local scoreboard', 'autopilot'],
         upcomingFeatures: ['mouse control', 'touch support', 'global scoreboard', 'responsive design', 'android version', 'iphone version']
     },
-    {projectName: 'epic-planner', imgSrc: 'images/epic-planner.png'},
-    {projectName: 'project-03', imgSrc: 'images/portfolio-03.jpg'},
-    {projectName: 'project-04', imgSrc: 'images/portfolio-04.jpg'},
-    {projectName: 'project-05', imgSrc: 'images/portfolio-05.jpg'},
-    {projectName: 'project-06', imgSrc: 'images/portfolio-06.jpg'},
-    {projectName: 'project-07', imgSrc: 'images/portfolio-07.jpg'},
-    {projectName: 'project-08', imgSrc: 'images/portfolio-08.jpg'},
-    {projectName: 'project-09', imgSrc: 'images/portfolio-09.jpg'},
-    {projectName: 'project-10', imgSrc: 'images/portfolio-10.jpg'}]
+        {projectName: 'epic-planner', imgSrc: 'images/epic-planner.png'},
+        {projectName: 'project-03', imgSrc: 'images/portfolio-03.jpg'},
+        {projectName: 'project-04', imgSrc: 'images/portfolio-04.jpg'},
+        {projectName: 'project-05', imgSrc: 'images/portfolio-05.jpg'},
+        {projectName: 'project-06', imgSrc: 'images/portfolio-06.jpg'},
+        {projectName: 'project-07', imgSrc: 'images/portfolio-07.jpg'},
+        {projectName: 'project-08', imgSrc: 'images/portfolio-08.jpg'},
+        {projectName: 'project-09', imgSrc: 'images/portfolio-09.jpg'},
+        {projectName: 'project-10', imgSrc: 'images/portfolio-10.jpg'}],
+    technologies: [
+        {link: null, title:"NodeJs", iconClass:"fab fa-node-js"},
+        {link: null, title:"JavaScript ES6", iconClass:"fab fa-js-square"},
+        {link: null, title:"MongoDB", iconClass:"iconify", iconData:"cib:mongodb"},
+        {link: null, title:"HBS", iconClass:"iconify", iconData:"logos:handlebars"},
+        {link: null, title:"React", iconClass:"fab fa-react"},
+        {link: null, title:"SocketIO", iconClass:"iconify", iconData:"cib:socket-io"},
+        {link: null, title:"QRCode", iconClass:"iconify", iconData:"ion:qr-code-sharp"},
+        {link: null, title:"Google Maps API", iconClass:"iconify", iconData:"mdi:google-maps"},
+        {link: null, title:"Google Calendar API", iconClass:"iconify", iconData:"logos:google-calendar"},
+        {link: null, title:"Canvas", iconClass:"iconify", iconData:"whh:canvas"},
+    ],
+    introDetails: {
+        title:'Johann Moreno',
+        subtitle:'fullstack dev',
+        imgSrc: "./images/profile.jpg",
+        imgAlt: "My profile picture"
+    }
 }
 
 const rootReducer = (state = initState, action) => {

@@ -5,9 +5,13 @@ export default class SocialNetwork extends Component {
         const {link, iconClass, title, iconData} = this.props.socialNetwork;
         return(
             <li className="social-list__item">
-                <a href={link} className="social-list__link" target="_blank" rel="noopener noreferrer">
-                    <i className={iconClass} title={title} data-icon={iconData} />
-                </a>
+                {
+                    link ?
+                    <a href={link} className="social-list__link" target="_blank" rel="noopener noreferrer">
+                        <i className={iconClass} title={title} data-icon={iconData} />
+                    </a>
+                    : <i className={iconClass} title={title} data-icon={iconData} />
+                }
             </li>
         )
     }

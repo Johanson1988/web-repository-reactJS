@@ -10,17 +10,10 @@ class Projects extends Component {
 
     render() {
         const project = this.props.work;
-        const introObj = 
-        {
-            title: project.projectName,
-            subtitle: project.technologies,
-            imgSrc: project.projectLogo,
-            imgAlt: 'logo ' + project.projectName
-        }
         return(
             <div>
                 <Header />
-                <Intro details={introObj} />
+                <Intro />
                 <Project details={project} />            
                 <Footer />
             </div>
