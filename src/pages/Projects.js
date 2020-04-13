@@ -7,37 +7,21 @@ import Project from './../components/Project';
 import { connect } from 'react-redux';
 
 class Projects extends Component {
-    state = {
-        introObj : { title: null },
-        projectObj :  {firstParagrah: null }
-    }
-    
-    componentDidMount () {
-        console.log(this.props);
-        const {handle} = this.props.match.params;
-        const introObj = {
-            title: handle,
-            subtitle: handle,
-            imgSrc: `./../images/${handle.replace("project", "portfolio")}.jpg`,
-            imgAlt: handle
-        }
-        const projectObj = {
-            firstParagrah: handle,
-            secondParagrah: handle,
-            thirdParagrah: handle,
-            imgSrc: `./../images/${handle.replace("project", "portfolio")}.jpg`,
-            imgAlt: handle
-        }
-        this.setState( _ => ({introObj,projectObj}));
-    }
 
     render() {
-        console.log('Projects:', this.props);
+        const project = this.props.work;
+        const introObj = 
+        {
+            title: project.projectName,
+            subtitle: project.technologies,
+            imgSrc: project.projectLogo,
+            imgAlt: 'logo ' + project.projectName
+        }
         return(
             <div>
                 <Header />
-                <Intro details={this.state.introObj} />
-                <Project details={this.state.projectObj} />            
+                <Intro details={introObj} />
+                <Project details={project} />            
                 <Footer />
             </div>
         )

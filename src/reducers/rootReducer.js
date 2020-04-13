@@ -1,11 +1,19 @@
 const initState = {
-    works: [{projectName: 'ironball', imgSrc: 'images/ironball.png',
-    githubLink: 'https://github.com/Johanson1988/project-iron-ball',
-    trelloLink:'https://trello.com/b/eZAaYGcE/ironball',
-    slidesLink:'https://docs.google.com/presentation/d/18911Of3tFYTkDpowqfjsfx49ftPjA5s2Uun3vg8jmAc/edit#slide=id.g6aeb787dc0_1_69',
-    deployLink:'https://johanson1988.github.io/project-iron-ball/',
-    projectDescription:'This project is a clone of the Arkanoid game. Arkanoid (アルカノイド Arukanoido) is an arcade game released by Taito in 1986. The player controls the "Vaus", a space vessel that acts as the game\'s "paddle" which prevents a ball from falling from the playing field, attempting to bounce it against a number of bricks. The ball striking a brick causes the brick to disappear. When all the bricks are gone, the player goes to the next level, where another pattern of bricks appears',
-    technologies:['canvas', 'es6', 'git']},
+    works: [
+    {
+        projectName: 'ironball',
+        projectLogo:  '/images/ironball-logo.png',
+        imgSrc: '/images/ironball.png',
+        imgAlt: 'Ball breaking bricks',
+        githubLink: 'https://github.com/Johanson1988/project-iron-ball',
+        trelloLink:'https://trello.com/b/eZAaYGcE/ironball',
+        slidesLink:'https://docs.google.com/presentation/d/18911Of3tFYTkDpowqfjsfx49ftPjA5s2Uun3vg8jmAc/edit#slide=id.g6aeb787dc0_1_69',
+        deployLink:'https://johanson1988.github.io/project-iron-ball/',
+        projectDescription:'This project is a clone of the Arkanoid game. Arkanoid (アルカノイド Arukanoido) is an arcade game released by Taito in 1986. The player controls the "Vaus", a space vessel that acts as the game\'s "paddle" which prevents a ball from falling from the playing field, attempting to bounce it against a number of bricks. The ball striking a brick causes the brick to disappear. When all the bricks are gone, the player goes to the next level, where another pattern of bricks appears',
+        technologies: ['canvas', 'es6', 'git'],
+        implementedFeatures: ['sounds', 'keyboard control', 'infinite levels', 'pause', 'local scoreboard', 'autopilot'],
+        upcomingFeatures: ['mouse control', 'touch support', 'global scoreboard', 'responsive design', 'android version', 'iphone version']
+    },
     {projectName: 'epic-planner', imgSrc: 'images/epic-planner.png'},
     {projectName: 'project-03', imgSrc: 'images/portfolio-03.jpg'},
     {projectName: 'project-04', imgSrc: 'images/portfolio-04.jpg'},
@@ -17,7 +25,7 @@ const initState = {
     {projectName: 'project-10', imgSrc: 'images/portfolio-10.jpg'}]
 }
 
-const rootReducer = (state= initState, action) => {
+const rootReducer = (state = initState, action) => {
     return state;
 }
 

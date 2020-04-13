@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 
 class Works extends Component {
     render() {
-        console.log('Works', this.props);
         const { works } = this.props;
         return(
             <section className="my-work" id="work">
