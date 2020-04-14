@@ -32,21 +32,33 @@ export default class Project extends Component {
                     </li>
                     : null
                     }
+                    {
+                        githubLink ?
                     <li className="social-list__item project__link">
                         <a href={githubLink} target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-github" />
                         </a>
                     </li>
-                    <li className="social-list__item project__link">
+                    : null
+                    }
+                    {
+                        slidesLink ?
+                        <li className="social-list__item project__link">
                         <a href={slidesLink} target="_blank" rel="noopener noreferrer">
                             <i className="iconify" data-icon="bx:bx-slideshow" data-inline="false" />
                         </a>
-                    </li>
-                    <li className="social-list__item project__link">
+                        </li>
+                    :null
+                    }
+                    {
+                        deployLink ?
+                        <li className="social-list__item project__link">
                         <a href={deployLink} target="_blank" rel="noopener noreferrer">
                             <i className="iconify" data-icon="logos:deploy" data-inline="false" />
                         </a>
                     </li>
+                    : null
+                    }
                 </ul>
             </div>
         )

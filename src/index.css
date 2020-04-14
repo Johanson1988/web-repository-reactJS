@@ -481,7 +481,14 @@ header {
     overflow: hidden;
     text-align: center;
     position: relative;
+}
 
+.tech-list__work {
+    margin: -.5em;
+    list-style: none;
+    display: grid;
+    grid-template-columns: minmax(10px, auto) minmax(10px, auto) minmax(10px, auto);
+    font-size: 1em;
 }
 
 .portfolio__img {
@@ -509,7 +516,6 @@ header {
     opacity: .5;
     color: green;
     font-size: 0.6em;
-    
 }
 
 .portfolio__title {
@@ -526,7 +532,7 @@ header {
     z-index: 2;
     position: absolute;
     top: 60%;
-    left: 20%;
+    left: 25%;
     font-size: 0px;
 }
 

@@ -6,14 +6,20 @@ import { connect } from 'react-redux';
 
 class Works extends Component {
     render() {
-        const { works } = this.props;
+        const { works, technologies } = this.props;
         return(
             <section className="my-work" id="work">
                 <h2 className="section__title">My works</h2>
                 <p className="section__subtitle">Selection of my range of work</p>                
                 <div className="portfolio">
                     {
-                        works.map(workObj => <Work key={shortid.generate()} work={workObj} />)
+                        
+                        works.map(workObj => {
+                            const technology = technologies.filter(tech => workObj.technologies.includes(tech.title));
+                            return (
+                                <Work key={shortid.generate()} work={workObj} technologies={technology} />
+                            )
+                    })
                     }
                 </div>
             </section>
@@ -23,7 +29,8 @@ class Works extends Component {
 
 const mapStateToProps = state => {
     return {
-        works: state.works
+        works: state.works,
+        technologies: state.technologies
     }
 } 
 

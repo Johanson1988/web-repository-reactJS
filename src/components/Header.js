@@ -9,9 +9,6 @@ export default class Header extends Component {
 
         return(
             <header>
-                <div className="logo">
-                    <img src="./../images/devjane.png" alt="Profile pic" />
-                </div>
                 <button className="nav-toggle" aria-label="toogle navigation" onClick={openMenu}>
                     <span className="hamburger"></span>
                 </button>

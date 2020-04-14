@@ -8,7 +8,6 @@ import shortid from 'shortid';
 class Intro extends Component {
     render() {
         const {title,subtitle, imgSrc, imgAlt} = this.props.introDetails;
-        console.log('Intro:',this.props.technologies);
         const technologies = this.props.technologies;
         return(
             <section className="intro" id="home">
@@ -46,8 +45,7 @@ const mapStateToProps = (state, ownProps) => {
             },            
                 technologies: state.technologies.filter(tech => project.technologies.includes(tech.title))
         }
-
-        }
+    }
     else {
         return {
             introDetails: state.introDetails
