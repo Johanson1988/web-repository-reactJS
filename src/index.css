@@ -509,10 +509,16 @@ header {
     opacity: .5;
 }
 
-.portfolio__item:hover .portfolio__title,
-.portfolio__item:hover .portfolio__logo  {
+.portfolio__item:hover .portfolio__title {
     display:block;
     transform: scale(5);
+    opacity: .5;
+    color: green;
+    font-size: 0.6em;    
+}
+.portfolio__item:hover .portfolio__logo  {
+    display:block;
+    transform: scale(3);
     opacity: .5;
     color: green;
     font-size: 0.6em;
@@ -584,6 +590,7 @@ footer a:hover,
 .project__description {
     padding: 1em 4em;
     text-align: justify;
+    font-size: 1.2em;
 }
 
 .project__img {

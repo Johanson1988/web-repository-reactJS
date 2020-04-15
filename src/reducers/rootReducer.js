@@ -27,6 +27,20 @@ const initState = {
         technologies: ['NodeJs', 'HBS', 'Google Maps API', 'Google Calendar API', 'MongoDB'],
         implementedFeatures: ['Create your own dayplan', 'get events from Google Calendar', 'User creation', 'View your plan in Google Maps', 'check bars and restaurants in your day plan area'],
         upcomingFeatures: ['This project was part of a course, now is being redesigned from scratch using react']
+    },
+    {
+        projectName: 'epicplanner',
+        projectLogo:  '/images/epicplanner-logo.png',
+        imgSrc: '/images/epicplanner.png',
+        imgAlt: 'Map showing an epic plan',
+        githubLink: 'https://github.com/Johanson1988/epic-planner',
+        trelloLink: 'https://trello.com/b/pawm0XYn/epic-planner',
+        slidesLink: null,
+        deployLink: 'https://epic-planner.herokuapp.com/',
+        projectDescription: 'Epic planner is a urban micro-planner that allows you to create a legendary route in Barcelona on a specific day and area. Its features include an array of leisure options located in the desired area: concerts, cultural events, cafes and bars, with links to MeetUp event pages for more information.',
+        technologies: ['NodeJs', 'HBS', 'Google Maps API', 'Google Calendar API', 'MongoDB'],
+        implementedFeatures: ['Create your own dayplan', 'get events from Google Calendar', 'User creation', 'View your plan in Google Maps', 'check bars and restaurants in your day plan area'],
+        upcomingFeatures: ['This project was part of a course, now is being redesigned from scratch using react']
     }
       //  {projectName: 'epic-planner', imgSrc: 'images/epic-planner.png'},
         //{projectName: 'project-03', imgSrc: 'images/portfolio-03.jpg'},

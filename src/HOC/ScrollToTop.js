@@ -7,7 +7,6 @@ class ScrollToTop extends Component {
         window.scrollTo(0, 0)
       }
     }
-
     render() {
       return this.props.children
     }
