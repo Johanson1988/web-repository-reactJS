@@ -54,6 +54,7 @@ Otros
 *::before,
 *::after {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Custom properties */
@@ -601,6 +602,8 @@ footer a:hover,
 .project__link {
     font-size: 2em;
     padding: 1em;
+    text-align: center;
+    text-decoration: none;
 }
 
 .project-features__list {
@@ -615,7 +618,11 @@ footer a:hover,
 .project-features__item {
     margin: 0 1em;
     text-transform: capitalize;
-    font-size: 1.2em;
-    
+    font-size: 1.2em;    
+}
 
+.text-repo-link__project {
+    font-size: 0.5em;
+    margin: 0;
+    padding: 0;
 }
