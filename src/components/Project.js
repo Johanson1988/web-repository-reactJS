@@ -3,7 +3,7 @@ import shortid from 'shortid';
 
 export default class Project extends Component {
     render() {
-        const {projectDescription, implementedFeatures, upcomingFeatures, imgSrc, imgAlt, trelloLink, frontEndLink, backEndLink, slidesLink, deployLink} = this.props.details;
+        const {projectDescription, implementedFeatures, upcomingFeatures, imgSrc, imgAlt, trelloLink, frontEndLink, backEndLink, slidesLink, deployLink, collaborators} = this.props.details;
         return(
             <div className="portfolio-item-individual">
                 <h2 className="project__title">Project Description</h2>
@@ -12,15 +12,31 @@ export default class Project extends Component {
                 <h2 className="project__title">Implemented features</h2>
                 <ul className="project-features__list">
                     {
+                        implementedFeatures ?
                         implementedFeatures.map(feature => <li className="project-features__item" key={shortid.generate()}>{feature}</li>)
+                        : null
                     }
                 </ul>
                 <h2 className="project__title">Upcoming features</h2>
                 <ul className="project-features__list">
                     {
+                        upcomingFeatures ?
                         upcomingFeatures.map(feature => <li className="project-features__item" key={shortid.generate()}>{feature}</li>)
+                        : <li className="project-features__item" key={shortid.generate()}>This project is finished</li>
                     }
                 </ul>
+                {
+                    collaborators ? 
+                    <div>
+                        <h2 className="project__title">Collaborators</h2>
+                        <ul className="social-list">
+                            {
+                                collaborators.map(collaborator => <li className="project-features__item" key={shortid.generate()}><a href={collaborator.githubLink}>{collaborator.name}</a></li>)
+                            }
+                        </ul>
+                    </div> : null
+
+                }
                 <h2 className="project__title">Links</h2>
                 <ul className="social-list">
                     {

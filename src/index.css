@@ -589,7 +589,7 @@ footer a:hover,
 }
 
 .project__description {
-    padding: 1em 4em;
+    padding: 1em 6em;
     text-align: justify;
     font-size: 1.2em;
 }
@@ -608,11 +608,13 @@ footer a:hover,
 
 .project-features__list {
     list-style:square;
-    display:flex;
+    display: grid;
+    grid-template-columns: minmax(10px, auto) minmax(10px, auto);
     justify-content: center;
     margin: 2em;    
     max-width: 80%;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .project-features__item {
