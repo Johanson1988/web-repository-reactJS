@@ -6,13 +6,14 @@ import shortid from 'shortid';
 export default class Work extends Component {
     render() {
         console.log(this.props);
-        const { projectName, imgSrc } = this.props.work;
+        const { projectName, imgSrc, color } = this.props.work;
         const { technologies } = this.props;
+        
         return(
         <Link to={"projects/" + projectName} className="portfolio__item">
-            <h3 className="portfolio__title">{projectName}</h3>
-            <div className="portfolio__logo">
-                <ul className="tech-list__work">            
+            <h3 className={`portfolio__title ${color}`}>{projectName}</h3>
+            <div className={`portfolio__logo ${color}`}>
+                <ul className={`tech-list__work ${color}`}>            
                 {
                     technologies.map(techIcon => <SocialNetwork key={shortid.generate()} socialNetwork={techIcon} />)
                 }

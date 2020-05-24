@@ -2,6 +2,7 @@ const initState = {
     works: [
     {
         projectName: 'ironball',
+        color: 'white',
         projectLogo:  '/images/ironball-logo.png',
         imgSrc: '/images/ironball.png',
         imgAlt: 'Ball breaking bricks',
@@ -18,6 +19,7 @@ const initState = {
     },
     {
         projectName: 'epicplanner',
+        color: 'blue',
         projectLogo:  '/images/epicplanner-logo.png',
         imgSrc: '/images/epicplanner.png',
         imgAlt: 'Map showing an epic plan',
@@ -34,6 +36,7 @@ const initState = {
     },
     {
         projectName: 'project canary',
+        color: 'red',
         projectLogo:  '/images/canary-logo.png',
         imgSrc: '/images/canary.png',
         imgAlt: 'question with multianswer from the game',

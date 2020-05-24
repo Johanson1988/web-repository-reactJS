@@ -642,3 +642,15 @@ footer a:hover,
     margin: 0;
     padding: 0;
 }
+
+.white {
+    color: white !important;
+}
+
+.red {
+    color: red !important;
+}
+
+.blue {
+    color: blue !important;
+}
