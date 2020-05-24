@@ -404,7 +404,20 @@ header {
 
 .service {
     max-width: 500px;
+    min-width: 300px;
     margin: 0 auto;
+}
+
+.academic {
+    list-style: none;
+}
+.academic > li {
+    text-align: center;
+}
+
+.academic-logo {
+    margin: 0 auto;
+    height: 30px;
 }
 
 @media (min-width: 800px) {
@@ -456,6 +469,7 @@ header {
         z-index: 2;
     }
 }
+
 
 /* My work */
 

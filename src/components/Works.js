@@ -9,8 +9,8 @@ class Works extends Component {
         const { works, technologies } = this.props;
         return(
             <section className="my-work" id="work">
-                <h2 className="section__title">My works</h2>
-                <p className="section__subtitle">Selection of my range of work</p>                
+                <h2 className="section__title">My projects</h2>
+                <p className="section__subtitle">Selection of my range of personal projects</p>                
                 <div className="portfolio">
                     {
                         
