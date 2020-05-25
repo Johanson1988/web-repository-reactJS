@@ -121,7 +121,7 @@ const initState = {
     introDetails: {
         title:'Johann Moreno',
         subtitle:'fullstack dev',
-        imgSrc: "./images/profile.jpg",
+        imgSrc: "./../images/profile.jpg",
         imgAlt: "My profile picture"
     }
 }

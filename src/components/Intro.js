@@ -26,7 +26,7 @@ class Intro extends Component {
                         :  <p className="section__subtitle section__subtitle--intro">{subtitle}</p>
                     }
                 
-                <img src={require(imgSrc)} alt={imgAlt} className="intro__img" />
+                <img src={(imgSrc)} alt={imgAlt} className="intro__img" />
             </section>
         )
     }
