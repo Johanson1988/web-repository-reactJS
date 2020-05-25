@@ -7,6 +7,7 @@ import shortid from 'shortid';
 
 class Intro extends Component {
     render() {
+        
         const {title,subtitle, imgSrc, imgAlt} = this.props.introDetails;
         const technologies = this.props.technologies;
         return(
@@ -25,7 +26,7 @@ class Intro extends Component {
                         :  <p className="section__subtitle section__subtitle--intro">{subtitle}</p>
                     }
                 
-                <img src={imgSrc} alt={imgAlt} className="intro__img" />
+                <img src={require(imgSrc)} alt={imgAlt} className="intro__img" />
             </section>
         )
     }
