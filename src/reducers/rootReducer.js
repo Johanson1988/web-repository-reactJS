@@ -32,7 +32,7 @@ const initState = {
         technologies: ['NodeJs', 'HBS', 'Google Maps API', 'Google Calendar API', 'MongoDB', 'CSS3', 'Express'],
         implementedFeatures: ['Create your own dayplan', 'get events from Google Calendar', 'User autentication', 'View your plan in Google Maps', 'check bars and restaurants in your day plan area'],
         upcomingFeatures: ['This project was part of a course, now is being redesigned from scratch using react'],
-        collaborators: [{name:'Nuria Lopez', githubLink:'https://github.com/nurlopezcollaborators'}]
+        collaborators: [{name:'Nuria Lopez', githubLink:'https://github.com/nurlopez'}]
     },
     {
         projectName: 'project canary',
@@ -46,7 +46,7 @@ const initState = {
         slidesLink: 'https://docs.google.com/presentation/d/1vBcvZXhEdjzxD4XFTRFLVY-nSdr45eOb44Z1lwOhRo4/edit',
         deployLink: 'https://iron-canary.herokuapp.com/home',
         projectDescription: 'This is a live multiplayer game to prove the tech skills and knowledge gained during the bootcamp. A registered user will be able to create a game, select a field, UX, data or webdev, or even the three of them. Then, anonymous players will be able to join the game using a QR code.',
-        technologies: ['NodeJs', 'HBS', 'Google Maps API', 'Google Calendar API', 'MongoDB', 'CSS3', 'Express'],
+        technologies: ['NodeJs', 'React', 'SocketIO', 'QRCode', 'MongoDB', 'CSS3', 'Express'],
         implementedFeatures: ['User autentication', 'Create games for people to join', 'Games are created with random questions from categories you select', 'Join via game-specific QR Code using your phone camera', 'Add questions to the pool via the homescreen', 'Scores are shown in a leaderboard', 'Responsive'],
         upcomingFeatures: null,
         collaborators: [{name:' Griffith Terry', githubLink:'https://github.com/Falconairio'}]
@@ -54,29 +54,54 @@ const initState = {
     {
         projectName: 'web portfolio',
         color: 'red',
-        projectLogo:  '/images/canary-logo.png',
-        imgSrc: '/images/canary.png',
-        imgAlt: 'question with multianswer from the game',
-        frontEndLink: 'https://github.com/Falconairio/project-canary-frontend',
-        backEndLink: 'https://github.com/Johanson1988/project-canary',
+        projectLogo:  '/images/jm-logo.PNG',
+        imgSrc: '/images/web-portfolio-logo.png',
+        imgAlt: 'JM Logo',
+        frontEndLink: 'https://github.com/Johanson1988/web-repository-reactJS',
+        backEndLink: null,
         trelloLink: null,
-        slidesLink: 'https://docs.google.com/presentation/d/1vBcvZXhEdjzxD4XFTRFLVY-nSdr45eOb44Z1lwOhRo4/edit',
-        deployLink: 'https://iron-canary.herokuapp.com/home',
-        projectDescription: 'This is a live multiplayer game to prove the tech skills and knowledge gained during the bootcamp. A registered user will be able to create a game, select a field, UX, data or webdev, or even the three of them. Then, anonymous players will be able to join the game using a QR code.',
-        technologies: ['NodeJs', 'HBS', 'Google Maps API', 'Google Calendar API', 'MongoDB', 'CSS3', 'Express'],
-        implementedFeatures: ['User autentication', 'Create games for people to join', 'Games are created with random questions from categories you select', 'Join via game-specific QR Code using your phone camera', 'Add questions to the pool via the homescreen', 'Scores are shown in a leaderboard', 'Responsive'],
-        upcomingFeatures: null,
-        collaborators: [{name:' Griffith Terry', githubLink:'https://github.com/Falconairio'}]
+        slidesLink: null,
+        deployLink: null,
+        projectDescription: 'My web porftfolio to present my professional and personal projects. In the future it might become a template where the user can customise color and data and use it for their own portfolios.',
+        technologies: ['React', 'CSS3', 'Redux'],
+        implementedFeatures: ['General Info Page', 'Projects View', 'Animated Navbar'],
+        upcomingFeatures: ['Add Styled Components', 'Create an Editor to edit information from the website'],
+        collaborators: [{name:'Nuria Lopez', githubLink:'https://github.com/nurlopez'}]
+    },
+    {
+        projectName: 'Epic Planner v2',
+        color: 'blue',
+        projectLogo:  '/images/epicplanner-logo.png',
+        imgSrc: '/images/EpicPlannerCover-1.jpg',
+        imgAlt: 'question with multianswer from the game',
+        frontEndLink: 'https://github.com/Johanson1988/epic-planner-v2-react',
+        backEndLink: 'https://github.com/nurlopez/epic-planner-v2-nodejs',
+        trelloLink: 'https://trello.com/b/R3ox3u8A/epic-planner-v20',
+        slidesLink: null,
+        deployLink: null,
+        projectDescription: 'Epic planner is a urban micro-planner that allows you to create a legendary route in Barcelona on a specific day and area. This is an improved version of the previous project using React instead of HBS',
+        technologies: ['React', 'NodeJs', 'Google Maps API', 'Google Calendar API', 'MongoDB', 'CSS3', 'Express', 'Redux'],
+        implementedFeatures: ['DayPlan backend endpoints', 'Dayplan Reducer'],
+        upcomingFeatures: ['Events coming from different sources', 'Google Maps integration', 'Event chat support', 'Social Media functions'],
+        collaborators: null
+    },
+    {
+        projectName: 'Envite online',
+        color: 'red',
+        projectLogo:  '/images/envite-logo.png',
+        imgSrc: '/images/envite.png',
+        imgAlt: 'envite board wireframe',
+        frontEndLink: 'https://github.com/OscarTrujillo/envite-fe',
+        backEndLink: 'https://github.com/Johanson1988/envite-restAPI',
+        trelloLink: 'https://trello.com/b/6l3fd10L/envite',
+        slidesLink: null,
+        deployLink: null,
+        projectDescription: 'Multiplayer online version of the game Envite.',
+        technologies: ['React', 'NodeJs', 'SocketIO', 'MongoDB', 'CSS3', 'Express', 'Redux'],
+        implementedFeatures: ['User Auth', 'Chat', 'Socket auth', 'Card shuffling'],
+        upcomingFeatures: [' play game', 'audio chat', 'tournaments', 'User stats', 'CPU Players'],
+        collaborators: [{name:'Oscar Trujillo', githubLink:'https://github.com/OscarTrujillo'}]
     }
-      //  {projectName: 'epic-planner', imgSrc: 'images/epic-planner.png'},
-        //{projectName: 'project-03', imgSrc: 'images/portfolio-03.jpg'},
-      //  {projectName: 'project-04', imgSrc: 'images/portfolio-04.jpg'},
-       // {projectName: 'project-05', imgSrc: 'images/portfolio-05.jpg'},
-      //  {projectName: 'project-06', imgSrc: 'images/portfolio-06.jpg'},
-      //  {projectName: 'project-07', imgSrc: 'images/portfolio-07.jpg'},
-       // {projectName: 'project-08', imgSrc: 'images/portfolio-08.jpg'},
-        //{projectName: 'project-09', imgSrc: 'images/portfolio-09.jpg'},
-      //  {projectName: 'project-10', imgSrc: 'images/portfolio-10.jpg'}
     ],
     technologies: [
         {link: null, title:"NodeJs", iconClass:"fab fa-node-js"},
@@ -90,7 +115,8 @@ const initState = {
         {link: null, title:"Google Calendar API", iconClass:"iconify", iconData:"logos:google-calendar"},
         {link: null, title:"Canvas", iconClass:"iconify", iconData:"whh:canvas"},
         {link: null, title:"CSS3", iconClass:"fab fa-css3-alt"},
-        {link: null, title:"Express", iconClass: "iconify", iconData: "logos:express"}
+        {link: null, title:"Express", iconClass: "iconify", iconData: "logos:express"},
+        {link: null, title:"Redux", iconClass: "iconify", iconData: "bx:bxl-redux"}
     ],
     introDetails: {
         title:'Johann Moreno',
