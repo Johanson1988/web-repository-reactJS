@@ -5,7 +5,7 @@ import Service from './../components/Service';
 const serviceObj1 = {title: 'Current ocupation', paragraph: 'Design an automation system for device testing in Barcelona’s Orange’s networks laboratory. We write scripts in TCL, using the iTest(Spirent Communications) IDE, to communicate with the devices involved via SSH, Telnet or WinRS and perform the test actions. Then, a software called Velocity (Spirent Communications) is responsible for executions, collect results and present the data to the final user.'};
 
 const serviceObj2 = {title: 'Academic Qualifications', qualifications: [
-    {title: 'Web Development Bootcamp', link:'https://www.ironhack.com/en/web-development', imgPath:'images/ironhack-logo.svg',    altDesc:'Ironhack'},
+    {title: 'Full Stack Web Development Bootcamp', link:'https://www.ironhack.com/en/web-development', imgPath:'images/ironhack-logo.svg',    altDesc:'Ironhack'},
     {title:'AS Degree in Computer Science', link:'https://www.uopeople.edu/programs/cs/', imgPath:'images/logo_uopeople.png', altDesc: 'University of the People'}
 ]} ;
 
