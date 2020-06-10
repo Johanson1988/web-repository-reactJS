@@ -17,7 +17,7 @@ export default class Header extends Component {
                         <NavbarItem navbarItem={{link:'#home', content:'Home'}} />
                         <NavbarItem navbarItem={{link:'#services', content:'What I do'}} />
                         <NavbarItem navbarItem={{link:'#about', content:'About me'}} />
-                        <NavbarItem navbarItem={{link:'#work', content:'My work'}} />
+                        <NavbarItem navbarItem={{link:'#work', content:'My Projects'}} />
                     </ul>
                 </nav>
             </header>

@@ -54,7 +54,7 @@ const initState = {
     {
         projectName: 'web portfolio',
         color: 'red',
-        projectLogo:  '/images/jm-logo.PNG',
+        projectLogo:  '/images/jm-logo.png',
         imgSrc: '/images/web-portfolio-logo.png',
         imgAlt: 'JM Logo',
         frontEndLink: 'https://github.com/Johanson1988/web-repository-reactJS',
