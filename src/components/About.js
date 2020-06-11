@@ -11,7 +11,7 @@ export default class About extends Component {
                     
                     <p>After passing all courses, I decided to move to Barcelona. Then I took the <a href="https://www.ironhack.com/en/web-development" target="_blank" rel="noopener noreferrer">Ironhack Web development Bootcamp</a> to kick off my career as a Junior web-dev. The project I am working on at the moment is about to conclude, and I am seeking for new opportunities as a Junior front-end or back-end web developer.</p>
                 </div>                
-                <img src="images/mern-stack.png" alt="MERN STACK" className="about-me__img" />
+                <img src="images/mern_stack.png" alt="MERN STACK" className="about-me__img" />
             </section>
         )
     }

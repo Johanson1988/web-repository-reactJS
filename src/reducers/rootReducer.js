@@ -3,7 +3,7 @@ const initState = {
     {
         projectName: 'ironball',
         color: 'white',
-        projectLogo:  '/images/ironball-logo.png',
+        projectLogo:  '/images/ironball_logo.png',
         imgSrc: '/images/ironball.png',
         imgAlt: 'Ball breaking bricks',
         frontEndLink: 'https://github.com/Johanson1988/project-iron-ball',
