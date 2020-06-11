@@ -620,6 +620,13 @@ footer a:hover,
     text-decoration: none;
 }
 
+.project__link a {
+    color:var(--clr-primary5);
+}
+.project__link a:visited {
+    color:var(--clr-primary3);
+}
+
 .project-features__list {
     list-style:square;
     display: grid;
@@ -637,11 +644,23 @@ footer a:hover,
     font-size: 1.2em;    
 }
 
+.project-features__item a {
+    color: var(--clr-primary5)
+}
+
+.project-features__item a :visited {
+    color: var(--clr-primary3)
+}
+
 .text-repo-link__project {
     font-size: 0.5em;
     margin: 0;
     padding: 0;
 }
+
+
+
+
 
 .white {
     color: white !important;
