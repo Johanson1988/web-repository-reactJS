@@ -101,6 +101,23 @@ const initState = {
         implementedFeatures: ['User Auth', 'Chat', 'Socket auth', 'Card shuffling'],
         upcomingFeatures: [' play game', 'audio chat', 'tournaments', 'User stats', 'CPU Players'],
         collaborators: [{name:'Oscar Trujillo', githubLink:'https://github.com/OscarTrujillo'}]
+    },
+    {
+        projectName: 'Food Planner',
+        color: 'red',
+        projectLogo:  '/images/foodplanner_logo.png',
+        imgSrc: '/images/foodplanner.png',
+        imgAlt: 'food planner wireframe',
+        frontEndLink: 'https://github.com/Johanson1988/food-planner-fe',
+        backEndLink: 'https://github.com/Johanson1988/food-planner-be',
+        trelloLink: null,
+        slidesLink: null,
+        deployLink: null,
+        projectDescription: 'Food App to plan your meals, control your nutrients ingestion, control your food store, plan your next meals and provides your shopping list',
+        technologies: ['React', 'NodeJs', 'MongoDB', 'CSS3', 'Express', 'Redux', 'React Hooks'],
+        implementedFeatures: ['Add Ingredient', 'Redux Store', 'Add food', 'Display Ingredient', 'Display Foods by date'],
+        upcomingFeatures: ['User auth', 'add health user data', 'food store', 'shopping list generator', ],
+        collaborators: null,
     }
     ],
     technologies: [
@@ -116,7 +133,8 @@ const initState = {
         {link: null, title:"Canvas", iconClass:"iconify", iconData:"whh:canvas"},
         {link: null, title:"CSS3", iconClass:"fab fa-css3-alt"},
         {link: null, title:"Express", iconClass: "iconify", iconData: "logos:express"},
-        {link: null, title:"Redux", iconClass: "iconify", iconData: "bx:bxl-redux"}
+        {link: null, title:"Redux", iconClass: "iconify", iconData: "bx:bxl-redux"},
+        {link: null, title:"React Hooks", iconClass: "iconify", iconData: "mdi:hook"},
     ],
     introDetails: {
         title:'Johann Moreno',
