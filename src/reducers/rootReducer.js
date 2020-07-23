@@ -66,7 +66,7 @@ const initState = {
         technologies: ['React', 'CSS3', 'Redux'],
         implementedFeatures: ['General Info Page', 'Projects View', 'Animated Navbar'],
         upcomingFeatures: ['Add Styled Components', 'Create an Editor to edit information from the website'],
-        collaborators: [{name:'Nuria Lopez', githubLink:'https://github.com/nurlopez'}]
+        collaborators: null,
     },
     {
         projectName: 'Epic Planner v2',
